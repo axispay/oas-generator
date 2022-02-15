@@ -8,6 +8,8 @@ program
   .usage('<OAS v3 file in YAML or JSON>')
   .arguments('<file>')
   .option('-n, --projectName <projectName>', 'Name for the generated folder')
+  .option('-t, --projectType <projectType>', 'Project Type (bff, microservice)')
+  .option('-c, --channel <channel>', 'Channel (mobile, portal')
   .option('-z, --generateZip', 'Generate a zip and delete the folder')
   .option('-j, --json', 'Generate oas-doc file as JSON (default is YAML)')
   .action(function(file, cmd) {
